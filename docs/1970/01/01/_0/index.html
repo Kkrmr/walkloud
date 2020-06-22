@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ブログのセットアップ | WalkLoud</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="タスク一覧
+開発環境の整備
+GitHub リポジトリの作成
+GitHub プロジェクトの作成
+GitHub Pages へのプロジェクトのデプロイ
+AWS アカウントの作成
+AWS 請求アラートの設定
+AWS Amplify Console の設定
+AWS Amplify Console へのプロジェクトのデプロイ
+開 ...">
+    <link rel="preload" href="/assets/css/0.styles.b70dfde1.css" as="style"><link rel="preload" href="/assets/js/app.59ad0881.js" as="script"><link rel="preload" href="/assets/js/6.4985e8c7.js" as="script"><link rel="preload" href="/assets/js/3.65228c63.js" as="script"><link rel="preload" href="/assets/js/12.47c464da.js" as="script"><link rel="prefetch" href="/assets/js/10.baed3745.js"><link rel="prefetch" href="/assets/js/11.b4e9c0d1.js"><link rel="prefetch" href="/assets/js/4.5056b536.js"><link rel="prefetch" href="/assets/js/5.af5ec893.js"><link rel="prefetch" href="/assets/js/7.e4b9505e.js"><link rel="prefetch" href="/assets/js/8.ec817068.js"><link rel="prefetch" href="/assets/js/9.78cc88e2.js"><link rel="prefetch" href="/assets/js/vuejs-paginate.631912cb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b70dfde1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/" class="nav-link home-link">WalkLoud </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/" class="nav-link">Blog</a></li><li class="nav-item"><a href="/tag/" class="nav-link">Tags</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">WalkLoud </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/" class="nav-link">Blog</a></li><li class="mobile-nav-item"><a href="/tag/" class="nav-link">Tags</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><div class="vuepress-blog-theme-content"><div class="content__default"><h1 id="ブログのセットアップ"><a href="#ブログのセットアップ" class="header-anchor">#</a> ブログのセットアップ</h1> <h2 id="タスク一覧"><a href="#タスク一覧" class="header-anchor">#</a> タスク一覧</h2> <ul><li>開発環境の整備</li> <li>GitHub リポジトリの作成</li> <li>GitHub プロジェクトの作成</li> <li>GitHub Pages へのプロジェクトのデプロイ</li> <li>AWS アカウントの作成</li> <li>AWS 請求アラートの設定</li> <li>AWS Amplify Console の設定</li> <li>AWS Amplify Console へのプロジェクトのデプロイ</li></ul> <h3 id="開発環境の整備"><a href="#開発環境の整備" class="header-anchor">#</a> 開発環境の整備</h3> <ul><li><p>環境情報</p> <ul><li>Windows Home 10 Version 2004（64 bit）</li> <li>WSL2</li> <li>Ubuntu 18.04.1 LTS (Bionic Beaver)</li> <li>Docker CE 19.03.11</li> <li>VuePress ^1.5.2</li> <li>vuepress/theme-blog ^1.5.2</li></ul></li> <li><p>各種設定</p> <ul><li>Docker コンテナとローカル（仮想ホスト）は src 配下をマウント</li> <li>package.json をローカルから Docker コンテナへ add</li></ul></li> <li><p>コマンドリスト</p> <ul><li><code>sudo docker build -t walkloud-frontend .</code></li> <li><code>sudo docker run -p 8080:8080 -it -v /mnt/c/work/apps/walkloud/frontend/src:/opt/walkloud-frontend/src walkloud-frontend sh</code></li></ul></li></ul> <h3 id="github-リポジトリの作成／github-プロジェクトの作成"><a href="#github-リポジトリの作成／github-プロジェクトの作成" class="header-anchor">#</a> GitHub リポジトリの作成／GitHub プロジェクトの作成</h3> <ul><li>https://github.com/Kkrmr/walkloud</li> <li>https://github.com/Kkrmr/walkloud/projects/1</li></ul></div> <!----> <hr> <!----></div> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#タスク一覧" title="タスク一覧">タスク一覧</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#開発環境の整備" title="開発環境の整備">開発環境の整備</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#github-リポジトリの作成／github-プロジェクトの作成" title="GitHub リポジトリの作成／GitHub プロジェクトの作成">GitHub リポジトリの作成／GitHub プロジェクトの作成</a></div></div></div></div> <footer class="footer" data-v-582f9766><div class="footer-left-wrap" data-v-582f9766><ul class="contact" data-v-582f9766></ul></div> <div class="footer-right-wrap" data-v-582f9766><ul class="copyright" data-v-582f9766></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.59ad0881.js" defer></script><script src="/assets/js/6.4985e8c7.js" defer></script><script src="/assets/js/3.65228c63.js" defer></script><script src="/assets/js/12.47c464da.js" defer></script>
+  </body>
+</html>
