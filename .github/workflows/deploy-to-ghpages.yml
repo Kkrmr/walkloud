@@ -4,9 +4,9 @@ name: Deploy To GitHub Pages
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -17,12 +17,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Check Out repository
-    - uses: actions/checkout@v2
+      - name: Check Out repository
+        uses: actions/checkout@v2
 
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v1.4.2
-      # with:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v1.4.2
+
+        # with:
         # Set always-auth in npmrc
         # always-auth: # optional, default is false
         # Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0
@@ -33,8 +34,7 @@ jobs:
         # scope: # optional
         # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
         # version: # optional
-
-    - name: npm install & build
-      run: |
-        npm install
-        npm run build
+      - name: npm install & build
+        run: |
+          npm install
+          npm run build
