@@ -4,4 +4,6 @@ module.exports = {
   themeConfig: {
     // Please keep looking down to see the available options.
   },
+  base: "/walkloud/",
+  dest: "docs",
 };
