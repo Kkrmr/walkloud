@@ -1,8 +1,8 @@
 FROM node:alpine3.11
 
-WORKDIR /opt/walkloud-frontend/
+WORKDIR /opt/loudwalk-frontend/
 
-VOLUME /opt/walkloud-frontend/src
+VOLUME /opt/loudwalk-frontend/src
 
 ADD . .
 

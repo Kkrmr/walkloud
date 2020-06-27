@@ -34,10 +34,15 @@ jobs:
         # scope: # optional
         # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
         # version: # optional
-      - name: npm install & build
+      - name: npm install
         run: |
           npm install
-          npm run build
 
-      - name: Vuepress deploy
+      - name: Vuepress build & deploy
         uses: jenkey2011/vuepress-deploy@1.0.1
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: Kkrmr/loudwalk
+          TARGET_BRANCH: master
+          BUILD_SCRIPT: npm run build
+          BUILD_DIR: docs/
