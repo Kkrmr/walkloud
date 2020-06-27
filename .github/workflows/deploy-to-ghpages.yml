@@ -41,7 +41,7 @@ jobs:
       - name: Vuepress build & deploy
         uses: jenkey2011/vuepress-deploy@1.0.1
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.LW_GH_ACTN }}
           TARGET_REPO: Kkrmr/loudwalk
           TARGET_BRANCH: master
           BUILD_SCRIPT: npm run build
