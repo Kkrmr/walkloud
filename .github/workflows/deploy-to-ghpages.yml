@@ -45,4 +45,4 @@ jobs:
           TARGET_REPO: Kkrmr/loudwalk
           TARGET_BRANCH: master
           BUILD_SCRIPT: npm run build
-          BUILD_DIR: docs/
+          BUILD_DIR: loudwalk/docs/
