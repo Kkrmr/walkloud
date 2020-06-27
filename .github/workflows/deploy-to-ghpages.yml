@@ -39,10 +39,9 @@ jobs:
           npm install
 
       - name: Vuepress build & deploy
-        uses: jenkey2011/vuepress-deploy@1.0.1
+        uses: grasilife/github-pages-deploy-action@master
         env:
           ACCESS_TOKEN: ${{ secrets.LW_GH_ACTN }}
-          TARGET_REPO: Kkrmr/loudwalk
-          TARGET_BRANCH: master
-          BUILD_SCRIPT: npm run build
-          BUILD_DIR: loudwalk/docs/
+          BASE_BRANCH: master # The branch the action should deploy from.
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: docs # The folder the action should deploy.
