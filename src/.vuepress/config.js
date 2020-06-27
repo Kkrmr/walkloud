@@ -1,9 +1,9 @@
 module.exports = {
-  title: "WalkLoud", // Title for the site. This will be displayed in the navbar.
+  title: "LoudWalk", // Title for the site. This will be displayed in the navbar.
   theme: "@vuepress/theme-blog",
   themeConfig: {
     // Please keep looking down to see the available options.
   },
-  base: "/walkloud/",
+  base: "/loudwalk/",
   dest: "docs",
 };
