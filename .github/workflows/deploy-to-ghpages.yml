@@ -39,8 +39,14 @@ jobs:
           npm install
           npm run build
 
-      - name: VuePress build & deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+      - name: VuePress deploy
+        env:
+          GITHUB_USER: "deploy2ghp-user"
+          GITHUB_EMAIL: "deploy2ghp-builduser@sample.com"
+          run: |
+            git config --local user.name "${GITHUB_USER}"
+            git config --local user.email "${GITHUB_EMAIL}"
+            git remote set-url origin https://${GITHUB_USER}: ${{ secrets.GITHUB_TOKEN }}@github.com:${GITHUB_REPOSITORY}.git
+            git add docs
+            git commit -m "auto deploy 2 gh-pages"
+            git push origin master
