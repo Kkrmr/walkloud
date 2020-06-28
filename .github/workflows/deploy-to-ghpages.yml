@@ -35,11 +35,12 @@ jobs:
         # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
         # version: # optional
       - name: npm install
-        run: npm install
+        run: |
+          npm install
+          npm run build
 
       - name: VuePress build & deploy
-        uses: testthedocs/github-pages-deploy-action@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.LW_GH_ACTN }}
-          BUILD_DIR: docs/
-          BUILD_SCRIPT: npm run build
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
