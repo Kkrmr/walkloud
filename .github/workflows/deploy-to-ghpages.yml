@@ -35,13 +35,11 @@ jobs:
         # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
         # version: # optional
       - name: npm install
-        run: |
-          npm install
+        run: npm install
 
-      - name: Vuepress build & deploy
-        uses: grasilife/github-pages-deploy-action@master
+      - name: VuePress build & deploy
+        uses: testthedocs/github-pages-deploy-action@master
         env:
           ACCESS_TOKEN: ${{ secrets.LW_GH_ACTN }}
-          BASE_BRANCH: master # The branch the action should deploy from.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: docs # The folder the action should deploy.
+          BUILD_DIR: docs/
+          BUILD_SCRIPT: npm run build
