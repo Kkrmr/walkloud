@@ -43,10 +43,10 @@ jobs:
         env:
           GITHUB_USER: "deploy2ghp-user"
           GITHUB_EMAIL: "deploy2ghp-builduser@sample.com"
-          run: |
-            git config --local user.name "${GITHUB_USER}"
-            git config --local user.email "${GITHUB_EMAIL}"
-            git remote set-url origin https://${GITHUB_USER}: ${{ secrets.GITHUB_TOKEN }}@github.com:${GITHUB_REPOSITORY}.git
-            git add docs
-            git commit -m "auto deploy 2 gh-pages"
-            git push origin master
+        run: |
+          git config --local user.name "${GITHUB_USER}"
+          git config --local user.email "${GITHUB_EMAIL}"
+          git remote set-url origin https://${GITHUB_USER}: ${{ secrets.GITHUB_TOKEN }}@github.com:${GITHUB_REPOSITORY}.git
+          git add docs
+          git commit -m "auto deploy 2 gh-pages"
+          git push origin master
