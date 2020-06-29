@@ -35,11 +35,18 @@ jobs:
         # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
         # version: # optional
       - name: npm install
-        run: npm install
+        run: |
+          npm install
+          npm run build
 
-      - name: VuePress build & deploy
-        uses: testthedocs/github-pages-deploy-action@master
+      - name: VuePress deploy
         env:
-          ACCESS_TOKEN: ${{ secrets.LW_GH_ACTN }}
-          BUILD_DIR: docs/
-          BUILD_SCRIPT: npm run build
+          GITHUB_USER: "deploy2ghp-user"
+          GITHUB_EMAIL: "deploy2ghp-builduser@sample.com"
+        run: |
+          git config --local user.name "${GITHUB_USER}"
+          git config --local user.email "${GITHUB_EMAIL}"
+          git remote set-url origin https://${GITHUB_USER}: ${{ secrets.GITHUB_TOKEN }}@github.com:${GITHUB_REPOSITORY}.git
+          git add docs
+          git commit -m "auto deploy 2 gh-pages"
+          git push origin master
