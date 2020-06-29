@@ -23,6 +23,9 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v1.4.2
 
+      - name: refresh local
+        run: git pull origin master
+
         # with:
         # Set always-auth in npmrc
         # always-auth: # optional, default is false
@@ -40,12 +43,7 @@ jobs:
           npm run build
 
       - name: VuePress deploy
-        env:
-          GITHUB_USER: "deploy2ghp-user"
-          GITHUB_EMAIL: "deploy2ghp-builduser@sample.com"
         run: |
-          git config --local user.name "${GITHUB_USER}"
-          git config --local user.email "${GITHUB_EMAIL}"
           git add docs
           git commit -m "auto deploy 2 gh-pages"
           git push origin HEAD:master
