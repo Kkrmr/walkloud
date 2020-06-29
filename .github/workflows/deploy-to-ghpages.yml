@@ -48,4 +48,4 @@ jobs:
           git config --local user.email "${GITHUB_EMAIL}"
           git add docs
           git commit -m "auto deploy 2 gh-pages"
-          git push origin master
+          git push origin HEAD:master
