@@ -40,7 +40,12 @@ jobs:
           npm run build
 
       - name: VuePress deploy
+        env:
+          GITHUB_USER: "deploy2ghp-user"
+          GITHUB_EMAIL: "deploy2ghp-builduser@sample.com"
         run: |
+          git config --local user.name "${GITHUB_USER}"
+          git config --local user.email "${GITHUB_EMAIL}"
           git add docs
           git commit -m "auto deploy 2 gh-pages"
           git push origin HEAD:master
