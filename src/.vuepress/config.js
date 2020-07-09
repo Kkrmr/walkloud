@@ -1,8 +1,28 @@
 module.exports = {
-  title: "LoudWalk", // Title for the site. This will be displayed in the navbar.
+  title: "LoudWalk",
   theme: "@vuepress/theme-blog",
   themeConfig: {
-    // Please keep looking down to see the available options.
+    //    directories: [
+    //      {
+    //        id: "blog",
+    //        dirname: "_blog",
+    //        title: "Blog",
+    //        path: "/_blog/",
+    //        itemPermalink: "/_blog/:year/:month/:day/:slug",
+    //      },
+    //    ],
+    footer: {
+      contact: [
+        {
+          type: "github",
+          link: "https://github.com/Kkrmr/loudwalk",
+        },
+      ],
+    },
+    summary: true,
+    serviceWorker: true,
+    updatePopup: true,
+    smoothScroll: true,
   },
   base: "/loudwalk/",
   dest: "docs",
