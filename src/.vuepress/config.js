@@ -1,5 +1,5 @@
 module.exports = {
-  title: "LoudWalk",
+  title: "LoudWalk - Kkrmr Blog",
   theme: "@vuepress/theme-blog",
   themeConfig: {
     //    directories: [
