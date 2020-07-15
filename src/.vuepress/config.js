@@ -2,15 +2,6 @@ module.exports = {
   title: "LoudWalk - Kkrmr Blog",
   theme: "@vuepress/theme-blog",
   themeConfig: {
-    //    directories: [
-    //      {
-    //        id: "blog",
-    //        dirname: "_blog",
-    //        title: "Blog",
-    //        path: "/_blog/",
-    //        itemPermalink: "/_blog/:year/:month/:day/:slug",
-    //      },
-    //    ],
     footer: {
       contact: [
         {
@@ -20,9 +11,8 @@ module.exports = {
       ],
     },
     summary: true,
-    serviceWorker: true,
-    updatePopup: true,
     smoothScroll: true,
+    pwa: true,
   },
   base: "/loudwalk/",
   dest: "docs",
