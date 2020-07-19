@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "1970/01/01/_0/index.html",
-    "revision": "f47e42af08626aba2d02346502967515"
+    "revision": "d1b9027c86689cf683c5d32732935137"
   },
   {
     "url": "404.html",
-    "revision": "4abbacfdc246a98426e140af7acd77f7"
+    "revision": "e70bea955e45de4ec7db5a016e255860"
   },
   {
     "url": "assets/css/0.styles.f51536de.css",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "revision": "2f640b266cd873bfa1d9a1d4c6ea3ee4"
   },
   {
-    "url": "assets/js/13.d257f695.js",
-    "revision": "7a02492951cd96f5fbd0b7efc3b5ff79"
+    "url": "assets/js/13.d254f762.js",
+    "revision": "b0240dd1049ce3cd50cab95b4e2a97eb"
   },
   {
     "url": "assets/js/3.59f3a641.js",
@@ -88,8 +88,8 @@ self.__precacheManifest = [
     "revision": "3d10da74d7d85c52f8caddff8d2a77af"
   },
   {
-    "url": "assets/js/app.dcf22026.js",
-    "revision": "7f57a1a9fb2230188ace70bc32dd19db"
+    "url": "assets/js/app.114b11af.js",
+    "revision": "5f29c8201e05fea79ad3608578ddea98"
   },
   {
     "url": "assets/js/vuejs-paginate.c6dc7ffd.js",
@@ -97,23 +97,23 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "a6aaa0621aa7746f112eef4f875c3442"
+    "revision": "d83c315978afde677ee0e508f33b1678"
   },
   {
     "url": "tag/Docker/index.html",
-    "revision": "1f21e89ca93b2a282e2a360d7d619661"
+    "revision": "6c05239629e772a72ded850e56b94f4d"
   },
   {
     "url": "tag/index.html",
-    "revision": "e41592afba96821ece7e20f987911ee3"
+    "revision": "40a2adf5f555c37e65b2b8688524915c"
   },
   {
     "url": "tag/VuePress/index.html",
-    "revision": "60c0b592bc93682a077ba77ada384588"
+    "revision": "0ba6c84e5ecb807d60033eea0ae32a5a"
   },
   {
     "url": "tag/WSL2/index.html",
-    "revision": "efc784067820bb2250e9ec40ed59b4a7"
+    "revision": "1d24cc497d5621f4d7658145704eff1b"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
