@@ -16,4 +16,12 @@ module.exports = {
   },
   base: "/loudwalk/",
   dest: "docs",
+  plugins: [
+    [
+      "@vuepress/google-analytics",
+      {
+        ga: "UA-120129436-2",
+      },
+    ],
+  ],
 };
